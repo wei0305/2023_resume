@@ -1,0 +1,28 @@
+div.animation {
+    width: 100%;
+    height: 100vh;
+    background-color: #640b0b;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #first {
+    stroke-dasharray: 8091px;
+    stroke-dashoffset: 8091px;
+    animation: fadeInside 1s ease-in forwards;
+  }
+  #second {
+    stroke-dasharray: 25201px;
+    stroke-dashoffset: 25201px;
+    animation: fadeInside 1s ease-in forwards 0.25s;
+  }
+  @keyframes fadeInside {
+    to {
+      stroke-dashoffset: 0px;
+    }
+  }
+  
