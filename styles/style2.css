@@ -83,11 +83,11 @@
     position: relative;
   }
   main section.picture img {
-    width: 30vw;
+    width: 25vw;
   }
   main section.picture div.blueRect {
     width: 30vw;
-    height: 75vh;
+    height: 60vh;
     background-color: #f8070755;
     position: absolute;
     top: 30px;

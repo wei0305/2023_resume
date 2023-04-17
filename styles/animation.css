@@ -8,12 +8,15 @@ div.animation {
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
   
   #first {
     stroke-dasharray: 8091px;
     stroke-dashoffset: 8091px;
     animation: fadeInside 1s ease-in forwards;
+
+    
   }
   #second {
     stroke-dasharray: 25201px;
