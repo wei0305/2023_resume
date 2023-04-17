@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  body {
+    position: relative;
+  }
+  .blueBG {
+    position: absolute;
+    top: -10vh;
+    right: 0;
+    z-index: -1;
+    width: 45vw;
+    height: 120vh;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    padding: 1.5rem;
+    width: 60%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    font-size: 1.75rem;
+  }
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
+  main section.left {
+    flex: 3 1 500px;
+  }
+  main section.left h1 {
+    font-size: 4rem;
+    color: #1e81b0;
+  }
+  main section.left p {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+  }
+  main section.right {
+    flex: 1 1 550px;
+    position: relative;
+  }
+  main section.right img {
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 35vh;
+    right: 15vw;
+    transform: translateY(-50%);
+  }
+  main section.table {
+    flex: 3 1 500px;
+    padding: 2rem;
+  }
+  main section.table table {
+    border-collapse: collapse;
+  }
+  main section.table table tr {
+    border-bottom: 1px solid #1e81b0;
+    transition: all 0.2s ease;
+  }
+  main section.table table tr td {
+    padding: 1rem;
+  }
+  main section.table table tr:hover {
+    background-color: rgba(30, 130, 176, 0.25);
+  }
+  main section.picture {
+    flex: 1 1 580px;
+    position: relative;
+  }
+  main section.picture img {
+    width: 30vw;
+  }
+  main section.picture div.blueRect {
+    width: 30vw;
+    height: 75vh;
+    background-color: #1e81b0;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: -1;
+  }
+  main section.form {
+    flex: 1 1 500px;
+  }
+  main section.form form {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  main section.form form div {
+    margin: 0.5rem;
+  }
+  main section.form form div label {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  main section.form form div input,
+  main section.form form div textarea {
+    background-color: rgba(160, 53, 53, 0.25);
+    color: black;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.25rem;
+    border: none;
+    width: 90%;
+  }
+  main section.form form div textarea {
+    vertical-align: top;
+  }
+  main section.form form button {
+    align-self: center;
+    background-color: rgba(100, 1, 1, 0.432);
+    color: rgb(3, 3, 3);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+  }
+  main div.line {
+    background-color: #101111;
+    width: 5px;
+  }
+  main section.contact {
+    flex: 1 1 550px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  main section.contact div.content h2 {
+    margin: 1rem 0rem;
+  }
+  .active {
+    color: #a3070798;
+  }
+  @media screen and (max-width: 1100px) {
+    .blueBG {
+      opacity: 0.7;
+    }
+    header nav ul {
+      flex-direction: column;
+    }
+    header nav ul li {
+      padding: 0.5rem 0rem;
+      border-bottom: 2px solid gray;
+    }
+    main section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+    }
+    main section.right img {
+      position: static;
+      transform: none;
+      width: 30vw;
+      height: 30vw;
+    }
+    main section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main section.picture img {
+      width: 50vw;
+    }
+    main section.picture div.blueRect {
+      display: none;
+    }
+  }
+  footer a {
+    padding: 1rem;
+  }
+  
