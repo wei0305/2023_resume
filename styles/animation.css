@@ -14,14 +14,14 @@ div.animation {
   #first {
     stroke-dasharray: 8091px;
     stroke-dashoffset: 8091px;
-    animation: fadeInside 1s ease-in forwards;
+    animation: fadeInside 3s ease-in forwards;
 
     
   }
   #second {
     stroke-dasharray: 25201px;
     stroke-dashoffset: 25201px;
-    animation: fadeInside 1s ease-in forwards 0.25s;
+    animation: fadeInside 1s ease-in forwards 0.5s;
   }
   @keyframes fadeInside {
     to {
