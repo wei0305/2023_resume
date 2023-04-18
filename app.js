@@ -10,3 +10,23 @@ for (let i = 0; i < text.length; i++) {
  lastWord.addEventListener("animationend", () => {
    animation.style = "transition: all 1s ease; opacity: 0; pointer-events: none;";
  })
+ function copyText() {
+  var textToCopy = document.getElementById("copy-text").innerText;
+
+  navigator.clipboard.writeText(textToCopy)
+    .then(function() {
+      alert("已複製：" + textToCopy);
+    }, function() {
+      alert("複製失敗。");
+    });
+}
+function copyText2() {
+  var textToCopy = document.getElementById("copy-text2").innerText;
+
+  navigator.clipboard.writeText(textToCopy)
+    .then(function() {
+      alert("已複製：" + textToCopy);
+    }, function() {
+      alert("複製失敗。");
+    });
+  }
